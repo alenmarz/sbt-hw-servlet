@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+    <servlet>
+        <servlet-name>SignInServlet</servlet-name>
+        <servlet-class>SignInServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>SignUpServlet</servlet-name>
+        <servlet-class>SignUpServlet</servlet-class>
+    </servlet>
+    <filter>
+        <filter-name>SignUpFilter</filter-name>
+        <filter-class>SignUpFilter</filter-class>
+    </filter>
+    <servlet-mapping>
+        <servlet-name>SignInServlet</servlet-name>
+        <url-pattern>/sign_in</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SignUpServlet</servlet-name>
+        <url-pattern>/sign_up</url-pattern>
+    </servlet-mapping>
+    <filter-mapping>
+        <filter-name>SignUpFilter</filter-name>
+        <url-pattern>/sign_up</url-pattern>
+    </filter-mapping>
+    <welcome-file-list>
+        <welcome-file>form.jsp</welcome-file>
+    </welcome-file-list>
+</web-app>

@@ -1,3 +1,5 @@
+package filter;
+
 import javax.servlet.*;
 import java.io.IOException;
 
@@ -14,4 +16,10 @@ public class SignUpFilter implements Filter {
 
         chain.doFilter(request, response);
     }
+
+    @Override
+    public void destroy() { }
+
+    @Override
+    public void init(FilterConfig filterConfig) throws ServletException { }
 }

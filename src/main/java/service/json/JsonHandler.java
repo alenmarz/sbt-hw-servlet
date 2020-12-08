@@ -1,5 +1,8 @@
+package service.json;
+
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
+import model.User;
 
 import java.io.File;
 import java.io.FileNotFoundException;

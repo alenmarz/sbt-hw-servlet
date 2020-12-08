@@ -5,15 +5,15 @@
          version="4.0">
     <servlet>
         <servlet-name>SignInServlet</servlet-name>
-        <servlet-class>SignInServlet</servlet-class>
+        <servlet-class>servlet.SignInServlet</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>SignUpServlet</servlet-name>
-        <servlet-class>SignUpServlet</servlet-class>
+        <servlet-class>servlet.SignUpServlet</servlet-class>
     </servlet>
     <filter>
         <filter-name>SignUpFilter</filter-name>
-        <filter-class>SignUpFilter</filter-class>
+        <filter-class>filter.SignUpFilter</filter-class>
     </filter>
     <servlet-mapping>
         <servlet-name>SignInServlet</servlet-name>
